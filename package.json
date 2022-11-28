@@ -1,0 +1,16 @@
+{
+  "name": "package-wgs-pertemuan-6",
+  "version": "1.0.0",
+  "description": "Package for using npm",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathanure",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0"
+  },
+  "type": "module"
+}
