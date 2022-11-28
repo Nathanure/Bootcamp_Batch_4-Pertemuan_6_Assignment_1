@@ -34,16 +34,17 @@ const contactCli = async () => {
     
     // Name validation
     if (valid.isAlpha(name, 'en-US', { ignore: ' ' })) {
-        console.log(`Your name is ${(name)}`);
         // Question 2, asking email
         const email = await answers("What's your email? ");
         // Email validation
         if (valid.isEmail(email)) {
-            console.log(`Your email is ${(email)}`);
             // Question 3, asking phone number
             const telp = await answers("What's your phone number? ");
             // Phone number validation
             if (valid.isMobilePhone(telp, 'id-ID')) {
+                // Display the output of all inputted answers
+                console.log(`Your name is ${(name)}`);
+                console.log(`Your email is ${(email)}`);
                 console.log(`Your number is ${(telp)}`);
                 // If all validation are passed then,
                 // make a directory, if such file doesn't exist yet
